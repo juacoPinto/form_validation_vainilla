@@ -50,10 +50,10 @@ theForm.addEventListener("submit", e => {
     errors = true;
     city.classList.add("alert-danger");
   }
-  // if (noSelection.value === "") {
-  //   errors = true;
-  //   state.classList.add("alert-danger");
-  // }
+  if (state.value === "") {
+    errors = true;
+    state.classList.add("alert-danger");
+  }
   if (postal.value === "") {
     errors = true;
     postal.classList.add("alert-danger");
